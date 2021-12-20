@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'custom secret key'
 api = Api(app)
 
-DRIVER_PATH = '/home/raijo/Downloads/chromedriver_linux64/chromedriver'
+DRIVER_PATH = './chromedriver_linux64/chromedriver'
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
